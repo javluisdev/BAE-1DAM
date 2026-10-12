@@ -33,29 +33,32 @@ Dos entidades y una relación.
 ## Ejercicio 2. Pokémon.
 
 ### 1. Entidades y relaciones.
-- Entidades: Personaje y Casa.
-- Relaciones: pertenece a
+- Entidades: Entrenador, Ejemplar y Especie
+- Relaciones: registra, corresponde
 
 ### 2. Frases del enunciado.
-- Cada personaje pertenece a una y solo una casa. 
+- Los entrenadores registran ejemplares.
+- Cada ejemplar corresponde a una única especie. 
 
 ### 3. Modelo invididuales.
 
-![Descripción de la imagen](../img/Modeloejercicio1drawio.png)
+![Descripción de la imagen](../img/)
 
 ### 4. Cardinalidad.
 Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualquier número de personajes registrados (0,n). Es una relación N:1
 
 ### 5. Modelo E/R completo.
-![Descripción de la imagen](../img/Ejerc1drawio.png.png)
+![Descripción de la imagen](../img/)
 
 ### 6. Atributos e identificadores.
 - Atributos:
-  Personaje: código, nombre, fecha de nacimiento y edad.
-  Casa: código, lema y nombre de asentamiento principal.
+  Entrenador: código, nombre, legión de origen.
+  Ejemplar: código propio, fecha de captura y apodo.
+  Especie: número pokéden, nombre y tipo principal.
 - Identificadores:
-  Personaje: código.
-  Casa: código
+  Entrenador: código.
+  Ejemplar: código propio.
+  Especie: número pokéden.
 
 ### 7. Restricciones.
 Dos entidades y una relación.
