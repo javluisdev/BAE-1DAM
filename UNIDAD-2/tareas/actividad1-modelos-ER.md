@@ -72,29 +72,32 @@ Tres entidades y dos relaciones.
 ## Ejercicio 3. Breaking Bad.
 
 ### 1. Entidades y relaciones.
-- Entidades: Personaje y Casa.
-- Relaciones: pertenece a
+- Entidades: Personaje y Episodio.
+- Relaciones: aparece.
 
 ### 2. Frases del enunciado.
-- Cada personaje pertenece a una y solo una casa. 
+- Un personaje puede aparecer en muchos episodios. 
 
 ### 3. Modelo invididuales.
 
-![Descripción de la imagen](../img/Modeloejercicio1drawio.png)
+![Descripción de la imagen](../img/modeloejer3drawio.png)
 
 ### 4. Cardinalidad.
-Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualquier número de personajes registrados (0,n). Es una relación N:1
+- Un personaje puede aparecer en muchos episodios (1,n).
+- Un episodio incluye al menos un personaje registrado (1,1).
+- Es una relación 1:N
 
 ### 5. Modelo E/R completo.
-![Descripción de la imagen](../img/Ejerc1drawio.png.png)
+![Descripción de la imagen](../img/Ejer3drawio.png)
 
 ### 6. Atributos e identificadores.
 - Atributos:
-  Personaje: código, nombre, fecha de nacimiento y edad.
-  Casa: código, lema y nombre de asentamiento principal.
+  - Personaje: código, ocupación y nombre.
+  - aparece: tiempo en pantalla y papel.
+  - Episodio: código único, duración, nº de episodio y título.
 - Identificadores:
-  Personaje: código.
-  Casa: código
+  - Personaje: código.
+  - Episodio: código único.
 
 ### 7. Restricciones.
 Dos entidades y una relación.
@@ -102,11 +105,12 @@ Dos entidades y una relación.
 ## Ejercicio 4. Minecraft.
 
 ### 1. Entidades y relaciones.
-- Entidades: Personaje y Casa.
-- Relaciones: pertenece a
+- Entidades: Jugador, Construcción y Mundo.
+- Relaciones: colabora en, tiene
 
 ### 2. Frases del enunciado.
-- Cada personaje pertenece a una y solo una casa. 
+- Varios jugadores pueden colaborar en una construcción.
+- Un mundo puede existir aunque todavía no tenga construcciones.
 
 ### 3. Modelo invididuales.
 
