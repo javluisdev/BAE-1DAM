@@ -285,30 +285,43 @@ Tres entidades fuertes y una relación.
 ## Ejercicio 9. Nintendo.
 
 ### 1. Entidades y relaciones.
-- Entidades: Personaje y Casa.
-- Relaciones: pertenece a
+- Entidades: Juego, Versión, Consola, Reseña y Usuario.
+- Relaciones: tiene, dispone de, recibe, escribe.
 
 ### 2. Frases del enunciado.
-- Cada personaje pertenece a una y solo una casa. 
+- Un juego puede tener versiones para varias consolas.
+- Una consola puede disponer de muchos juegos.
+- El catálogo recibe reseñas de usuarios.
+- Un usuario puede escribir varias reseñas, pero como máximo una por cada versión.
 
 ### 3. Modelo invididuales.
 
-![Descripción de la imagen](../img/Modeloejercicio1drawio.png)
+![Descripción de la imagen](../img/Modeloejer9drawio.png)
 
 ### 4. Cardinalidad.
-Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualquier número de personajes registrados (0,n). Es una relación N:1
+- Un juego puede tener versiones para varias consolas (0,n) y una consola puede disponer de muchos juegos (0,n). Un juego anunciado puede estar registrado antes de que se haya publicado ninguna versión.
+- En este catálogo existe como máximo una versión para cada pareja juego-consola (1,1).
+- Una reseña se refiere a una versión concreta de un juego, no al juego en genera (1,1).
+- Cada reseña pertenece a un único usuario. (1,1).
+- Un usuario puede escribir varias reseñas, pero como máximo una por cada versión (0,n).
+- La relación JUEGO-VEERSION es 1:N, VERSION-CONSOLA es N:1, VERSION-RESEÑA es 1:N y RESEÑA-USUARIO es 1:N
 
 ### 5. Modelo E/R completo.
-![Descripción de la imagen](../img/Ejerc1drawio.png.png)
+![Descripción de la imagen](../img/Ejer9drawio.png)
 
 ### 6. Atributos e identificadores.
 - Atributos:
-  Personaje: código, nombre, fecha de nacimiento y edad.
-  Casa: código, lema y nombre de asentamiento principal.
+  - Juego: código, título y genero.
+  - Versión: precio inicia, código versión.
+  - Consola: código consola, nombre y año lanzamiento.
+  - Reseña: código reseña, comentario y puntuación.
+  - Usuario: código usuario y alias.
 - Identificadores:
-  Personaje: código.
-  Casa: código
-
+  - Juego: código.
+  - Versión: código versión.
+  - Consola: código consola.
+  - Reseña: código reseña.
+  - Usuario: código usuario
+    .
 ### 7. Restricciones.
-Dos entidades y una relación.
-
+Cinco entidades fuertes y cuatro relaciones.
