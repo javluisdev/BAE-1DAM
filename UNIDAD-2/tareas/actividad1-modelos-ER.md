@@ -14,18 +14,20 @@
 ![Descripción de la imagen](../img/Modeloejercicio1drawio.png)
 
 ### 4. Cardinalidad.
-Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualquier número de personajes registrados (0,n). Es una relación N:1
+- Cada personaje pertenece a una y solo una casa (1,1). 
+- Una casa puede tener cualquier número de personajes registrados (0,n). 
+- Es una relación N:1
 
 ### 5. Modelo E/R completo.
 ![Descripción de la imagen](../img/Ejerc1drawio.png.png)
 
 ### 6. Atributos e identificadores.
 - Atributos:
-  Personaje: código, nombre, fecha de nacimiento y edad.
-  Casa: código, lema y nombre de asentamiento principal.
+  - Personaje: código, nombre, fecha de nacimiento y edad.
+  - Casa: código, lema y nombre de asentamiento principal.
 - Identificadores:
-  Personaje: código.
-  Casa: código
+  - Personaje: código.
+  - Casa: código
 
 ### 7. Restricciones.
 Dos entidades y una relación.
@@ -42,26 +44,30 @@ Dos entidades y una relación.
 
 ### 3. Modelo invididuales.
 
-![Descripción de la imagen](../img/)
+![Descripción de la imagen](../img/Modeloejer2drawio.png)
 
 ### 4. Cardinalidad.
-Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualquier número de personajes registrados (0,n). Es una relación N:1
+- Un entrenador puede tener varios ejemplares de la misma especie (1,n).
+- Cada ejemplar pertenece a un único entrenador (1,1).
+- Cada ejemplar corresponde a una única especie (1,1).
+- Puede haber especies en el catálogo que ningún entrenador haya capturado todavía (0,n)
+- La relación ENTRENADOR-EJEMPLAR es 1:N y EJEMPLAR-ESPECIE es 1:N.
 
 ### 5. Modelo E/R completo.
-![Descripción de la imagen](../img/)
+![Descripción de la imagen](../img/Ejercicio2drawio.png)
 
 ### 6. Atributos e identificadores.
 - Atributos:
-  Entrenador: código, nombre, legión de origen.
-  Ejemplar: código propio, fecha de captura y apodo.
-  Especie: número pokéden, nombre y tipo principal.
+  - Entrenador: código, nombre, legión de origen.
+  - Ejemplar: código propio, fecha de captura y apodo.
+  - Especie: número pokéden, nombre y tipo principal.
 - Identificadores:
-  Entrenador: código.
-  Ejemplar: código propio.
-  Especie: número pokéden.
+  - Entrenador: código.
+  - Ejemplar: código propio.
+  - Especie: número pokéden.
 
 ### 7. Restricciones.
-Dos entidades y una relación.
+Tres entidades y dos relaciones.
 
 ## Ejercicio 3. Breaking Bad.
 
