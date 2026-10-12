@@ -179,7 +179,6 @@ Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualq
 
 ### 7. Restricciones.
 Dos entidades y una relación.
-## Ejercicio 1. Juegos de Tronos.
 
 ## Ejercicio 7. Elden Ring.
 
