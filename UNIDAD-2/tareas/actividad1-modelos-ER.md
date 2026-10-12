@@ -226,8 +226,8 @@ Dos entidades fuertes y dos relaciones.
 ### 4. Cardinalidad.
 - Cada jefe aparece en una sola zona de esta guía (1,1).
 - Una zona puede tener varios jefes o ninguno (0,n).
--  Un jugador puede derrotar a muchos jefes, (0,n) y cada jefe puede ser derrotado por muchos jugadores (0,n). Un jugador nuevo puede no haber derrotado a ninguno.
--  La relación ZONA-JEFE es 1:M y JEFE-JUGADOR es N:M.
+- Un jugador puede derrotar a muchos jefes, (0,n) y cada jefe puede ser derrotado por muchos jugadores (0,n). Un jugador nuevo puede no haber derrotado a ninguno.
+- La relación ZONA-JEFE es 1:M y JEFE-JUGADOR es N:M.
 
 ### 5. Modelo E/R completo.
 ![Descripción de la imagen](../img/Ejercicio7drawio.png)
@@ -249,32 +249,38 @@ Dos entidades fuertes y dos relaciones.
 ## Ejercicio 8. Valorant.
 
 ### 1. Entidades y relaciones.
-- Entidades: Personaje y Casa.
-- Relaciones: pertenece a
+- Entidades: Jugador, Partida y Agente.
+- Relaciones: utiliza
 
 ### 2. Frases del enunciado.
-- Cada personaje pertenece a una y solo una casa. 
+- Un jugador puede disputar muchas partidas y utilizar distintos agentes en ellas. 
 
 ### 3. Modelo invididuales.
 
-![Descripción de la imagen](../img/Modeloejercicio1drawio.png)
+![Descripción de la imagen](../img/Modeloejer8drawio.png)
 
 ### 4. Cardinalidad.
-Cada personaje pertenece a una y solo una casa (1,1). Una casa puede tener cualquier número de personajes registrados (0,n). Es una relación N:1
+- Un jugador puede disputar muchas partidas y utilizar distintos agentes en ellas (0,n).
+- Un agente puede ser utilizado por muchos jugadores y aparecer en muchas partidas. Cada jugador que participa en una partida utiliza exactamente un agente en ella (1,n).
+- Una partida debe contar con al menos un jugador, pero se permite registrar jugadores y agentes que todavía no hayan intervenido en ninguna partida (1,n).
+- La relación JUGADOR-AGENTE es N, JUGADOR-PARTIDA es N y PARTIDA-AGENTE es N.
 
 ### 5. Modelo E/R completo.
-![Descripción de la imagen](../img/Ejerc1drawio.png.png)
+![Descripción de la imagen](../img/Ejercicio8drawio.png)
 
 ### 6. Atributos e identificadores.
 - Atributos:
-  Personaje: código, nombre, fecha de nacimiento y edad.
-  Casa: código, lema y nombre de asentamiento principal.
+  - Jugador: código y usuario.
+  - Partida: código, fecha y mapa.
+  - Agente: código, nombre y rol
+  - utiliza: eliminaciones
 - Identificadores:
-  Personaje: código.
-  Casa: código
+  - Jugador: código.
+  - Partida: código.
+  - Agente: código.
 
 ### 7. Restricciones.
-Dos entidades y una relación.
+Tres entidades fuertes y una relación.
 
 ## Ejercicio 9. Nintendo.
 
